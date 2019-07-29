@@ -1,0 +1,323 @@
+html,
+body {
+    height: 100%;
+}
+body {
+    overflow-y: scroll;
+}
+html {
+    font-size: 12px;
+}
+@media all and (min-width: 750px) {
+    #main {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+
+        bottom: 0px;
+        left: 0;
+        overflow: hidden;
+    }
+
+    #mainContent {
+        width: 500%;
+        height: 100%;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .index,
+    .gaokao,
+    .shuoshi,
+    .yuke,
+    .contact {
+        position: relative;
+        padding-top: 48px;
+        float: left;
+        width: 20%;
+        height: 100%;
+        background: white;
+
+        -webkit-box-sizing: border-box;
+
+        box-sizing: border-box;
+    }
+
+    .pageLeft {
+        position: relative;
+        float: left;
+        height: 100%;
+        width: 44%;
+    }
+    .pageRight {
+        float: left;
+        width: 56%;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .pageLeft img {
+        position: absolute;
+        width: 60%;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    .index_text {
+        margin-left: 8.75rem;
+    }
+    .gaokao_text {
+        padding-right: 5.94rem;
+    }
+    .contactLeft {
+        /* float: left; */
+        margin-top: 5.13rem;
+        margin-left: 8.88rem;
+        margin-right: 30rem;
+        max-width: 62rem;
+        /* padding-right: 14.5rem; */
+    }
+}
+
+.index {
+    background: url(./img/index/bk.png) no-repeat 90% center/61.7%;
+}
+
+.index_title {
+    margin: 8.88rem 0 1.63rem;
+    font-size: 5.63rem;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: rgba(1, 1, 1, 1);
+}
+.index_des {
+    font-size: 5rem;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: bold;
+    color: rgba(1, 1, 1, 1);
+}
+.index_fuze {
+    font-size: 1.5rem;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: bold;
+    color: rgba(83, 112, 111, 1);
+    line-height: 3.25rem;
+    margin-top: 4.49rem;
+    width: 299px;
+}
+.index_tips_contact {
+    margin-top: 20px;
+    font-size: 1.25rem;
+    font-family: MicrosoftYaHei-Bold;
+    color: rgba(83, 112, 111, 1);
+    line-height: 3.25rem;
+    width: 299px;
+}
+
+/*  */
+
+.gaokao_title,
+.yuke_title,
+.shuoshi_title {
+    margin: 5.19rem 0 2.81rem;
+    font-size: 5.62rem;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: rgba(1, 1, 1, 1);
+}
+
+.gaokao_des,
+.shuoshi_des {
+    font-size: 3.75rem;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: bold;
+    color: rgba(220, 220, 220, 1);
+}
+.gaokaoContent > p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: rgba(49, 49, 49, 1);
+    line-height: 2.25rem;
+}
+.gaokao_table {
+    vertical-align: top;
+    width: 48%;
+    display: inline-block;
+    border-left: 1px solid #a0a0a0;
+    border-right: 1px solid #a0a0a0;
+}
+.gaokao_table .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    text-align: center;
+    font-size: 0.88rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid #a0a0a0;
+}
+.gaokao_table .gaokao_table_header {
+    /* height: 3.06rem; */
+    background-color: #d2d2d2;
+}
+.gaokao_table .row > div:nth-child(1) {
+    width: 7.43rem;
+}
+
+.flex_1 {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+.shuoshi p {
+    font-size: 1.25rem;
+    padding-top: 2.75rem;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: rgba(49, 49, 49, 1);
+    margin-right: 9%;
+}
+.yuke p {
+    font-family: MicrosoftYaHei-Bold;
+    font-size: 1.25rem;
+    padding-top: 3.25rem;
+    padding-right: 13%;
+}
+.yuke p.subTitle {
+    font-weight: 600;
+}
+
+.contactRight {
+    position: absolute;
+    right: 0;
+    top: 48px;
+    width: 30rem;
+    height: 100%;
+    background-color: #d2d2d2;
+    text-align: center;
+
+    font-family: MicrosoftYaHeiLight;
+    font-size: 0.88rem;
+    font-weight: normal;
+    font-stretch: normal;
+    color: #000000;
+}
+.contact .title {
+    font-family: MicrosoftYaHei-Bold;
+    font-size: 2.5rem;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 2.5rem;
+    letter-spacing: 0rem;
+    color: #000000;
+    margin-bottom: 3.38rem;
+}
+.contact .des {
+    font-family: MicrosoftYaHei-Bold;
+    font-size: 1.25rem;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 2.25rem;
+    letter-spacing: 0rem;
+    color: #313131;
+    margin-bottom: 3.13rem;
+}
+.contactLeft .DoWhat {
+    margin-top: 2.44rem;
+    overflow: hidden;
+}
+.contactLeft .imgBox {
+    float: left;
+    width: 6.81rem;
+}
+.contactLeft .DoWhatText {
+    /* float: left; */
+    font-family: MicrosoftYaHei-Bold;
+    font-size: 1.25rem;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 2.25rem;
+    letter-spacing: 0rem;
+    color: #313131;
+}
+.contactLeft .DoWhatText > div:nth-child(1) {
+    font-weight: 600;
+}
+.contactLeft .DoWhatText > div:nth-child(2) {
+    overflow: auto;
+}
+.contactLeft img {
+    max-width: 4.19rem;
+    max-height: 4.25rem;
+}
+
+.contactRightTitle {
+    font-family: MicrosoftYaHei-Bold;
+    font-size: 2.5rem;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 2.5rem;
+    letter-spacing: 0rem;
+    color: #000000;
+
+    margin: 5.15rem 0 1.94rem;
+}
+
+.contactRightAddContact {
+    text-align: center;
+    vertical-align: middle;
+}
+.contactRightInput {
+    /* float: left; */
+    vertical-align: middle;
+    width: 16.25rem;
+    height: 2.5rem;
+    background-color: #ffffff;
+    border-radius: 1.25rem 0rem 0rem 1.25rem;
+    outline: none;
+    padding: 0 2rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.contactRightBtn {
+    outline: none;
+    vertical-align: middle;
+    cursor: pointer;
+    width: 6.88rem;
+    height: 2.5rem;
+    color: white;
+    font-size: 1.25rem;
+    margin-left: 0.4rem;
+    background-color: #2d2d2d;
+    border-radius: 0rem 1.25rem 1.25rem 0rem;
+}
+.contactRight img {
+    width: 8.75rem;
+    height: 8.75rem;
+    margin: 1.25rem 0;
+}
+
+@media all and (min-width: 1600px) {
+    html {
+        font-size: 14px;
+    }
+    .contactLeft {
+        margin-top: 5.13rem;
+        margin-left: 12.88rem;
+        margin-right: 30rem;
+        max-width: 62rem;
+    }
+}
+@media all and (min-width: 1700px) {
+    html {
+        font-size: 15px;
+    }
+}
+@media all and (min-width: 1800px) {
+    html {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,54 @@
+/* 小于750时 */
+@media all and (max-width: 750px) {
+    html {
+        font-size: 12px;
+    }
+    #main {
+        padding: 48px 0 0;
+        height: 100%;
+    }
+
+    .index,
+    .gaokao,
+    .shuoshi,
+    .yuke,
+    .contact {
+        position: relative;
+        background: white;
+        box-sizing: border-box;
+        padding-top: 50px;
+    }
+    .pageLeft {
+        text-align: center;
+    }
+    .pageLeft img {
+        max-width: 50%;
+    }
+
+    .index_title {
+        margin: 0;
+        font-size: 3rem;
+    }
+    .index {
+        background: url(./img/index/bk.png) no-repeat 90% center/61.7%;
+    }
+    .index_des {
+        font-size: 2rem;
+    }
+    .gaokao_title,
+    .yuke_title,
+    .shuoshi_title {
+        margin: 0;
+        font-size: 3rem;
+    }
+    .gaokao_des,
+    .shuoshi_des {
+        font-size: 2rem;
+    }
+
+    .contactRight {
+        position: static;
+        width: 100%;
+        padding: 20px 0;
+    }
+}
